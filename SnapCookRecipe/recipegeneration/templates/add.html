@@ -1,0 +1,226 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MEAL TRACKER | Add Food Item</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu:400,700" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./bs/css/united.min.css" />
+		<link rel="stylesheet" href="./styles.css" />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+        <style>
+			.custom-center {
+				display: flex;
+				justify-content: center;
+			}
+			
+		</style>
+		<!-- Increase the width of columns -->
+<style>
+    .col-lg-4, .col-lg-8 {
+        width: 80%; /* Adjust the width as needed */
+    }
+
+    /* You can adjust other column sizes (.col-lg-*) similarly */
+</style>
+
+<!-- Increase the spacing between columns -->
+<style>
+    .row {
+        margin-left: -15px; /* Adjust the negative margin as needed */
+        margin-right: -15px; /* Adjust the negative margin as needed */
+    }
+
+    .col-lg-4, .col-lg-8 {
+        padding-left: 15px; /* Adjust the padding as needed */
+        padding-right: 15px; /* Adjust the padding as needed */
+    }
+</style>
+<!-- Increase font size for all text content -->
+<style>
+    body {
+        font-size: 16px; /* You can adjust the value as needed */
+    }
+</style>
+
+<!-- Increase font size for headings -->
+<style>
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px; /* You can adjust the value as needed */
+    }
+</style>
+
+<!-- Increase font size for specific elements -->
+<style>
+    .form-control {
+        font-size: 18px; /* You can adjust the value as needed */
+    }
+    .btn {
+        font-size: 18px; /* You can adjust the value as needed */
+    }
+</style>
+
+	</head>
+	<body>
+
+		<div class="container-fluid custom-center " id="wrapper">
+			<div class="row justify-content-center mt-5" style="margin-left: 150px;">
+			<div class="row" id="homeJumbo">
+				<div class="overlay"></div>
+				<div class="col-lg-12">
+				<!--	<h1>
+						<a href="{{ url_for('mealplan_blueprint.index')}}">MEAL PLANNER</a>
+					</h1> -->
+					
+					<div class="row t20 ">
+						<div class="col-lg-4 col-lg-offset-4">
+							<ul class="nav nav-pills nav-justified">
+							  <li role="presentation">
+							  	<a href="{{ url_for('mealplan_blueprint.index')}}" title="Home" class="btn btn-secondary btn-lg mb-3">Home</a>
+							  </li>
+							<!--  <li role="presentation" class="active">
+							  	<a href="{{ url_for('mealplan_blueprint.add')}}" title="Add Food Item">Add Food Item</a>
+							  </li> --> 
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t30" >
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="card" style="border: 4px solid #d3d3d3;  box-shadow: 5px 5px 15px rgba(0, 0, 2, 0.4);">
+                        <div class="card-body">
+                            <h3 class="card-title">
+								<i class="glyphicon glyphicon-plus-sign"></i> MEAL TRACKER
+							</h3>
+							<hr />
+
+							<form action="{{ url_for('mealplan_blueprint.add')}}" method="POST" role="form">
+							
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="form-group">
+											<label for="food-name">Food Name</label>
+						                  	<input type="text" class="form-control" id="food-name" name="food-name" placeholder="Food Name" value="{{ food.name }}" autofocus>
+										</div>
+							
+									</div>
+									<div class="col-lg-4">
+										<div class="form-group">
+						                  <label for="protein">Protein</label>
+						                  <input type="number" class="form-control" id="protein" name="protein"  value="{{ food.proteins }}" placeholder="Protein">
+						                </div>
+									</div>
+									<div class="col-lg-4">
+										<div class="form-group">
+						                  <label for="carbohydrates">Carbohydrates</label>
+						                  <input type="number" class="form-control" id="carbohydrates" name="carbohydrates"  value="{{ food.carbs }}"  placeholder="Carbohydrates">
+						                </div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="form-group">
+						                  <label for="fat">Fat</label>
+						                  <input type="number" class="form-control" id="fat" name="fat"  value="{{ food.fats }}"  placeholder="Fat">
+						                </div>
+									</div>
+
+									<div class="col-lg-4 mt-3 ml-5">
+										<div class="form-group">
+											<label style="visibility:hidden">submit</label>
+                                            <input type="hidden" name="food-id" value="{{ food.id }}">
+											<button type="submit" class="btn btn-primary btn-block">
+												<i class="glyphicon glyphicon-upload"></i> Submit
+											</button>
+										</div>
+									</div>
+								</div>
+							
+							</form>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t20">
+				<div class="col-lg-8 col-lg-offset-2 ml-3 mt-3">
+					<div class="panel panel-default rounded" style="border: 4px solid #d3d3d3; box-shadow: 5px 5px 15px rgba(0, 0, 2, 0.4);"> <!-- Add glowing border effect -->
+						<div class="panel-body">
+							<h4 class="lean-h text-black mt-4">
+								<i class="glyphicon glyphicon-th-list"></i> Food Items
+							</h4>
+						</div>
+						<div class="table-responsive">
+							<table class="table table-striped table-hover table-bordered">
+								<thead>
+									<tr>
+										<th style="width: 5%;">No.</th>
+										<th>Name</th>
+										
+										<th style="width: 10%;">Protein</th>
+										<th style="width: 16%;">Carbohydrates</th>
+										<th style="width: 10%;">Fat</th>
+										<th style="width: 12%;">Calories</th>
+										<th style="width: 20%;">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+                                    {% for food in foods %}
+									<tr>
+										<td>{{ food.id }}</td><td>{{ food.name }}</td><td>{{ food.proteins }}</td>
+										<td>{{ food.carbs }}</td><td>{{ food.fats }}</th><td>{{ food.calories }}</td>
+										<td>
+											<a href="{{ url_for('mealplan_blueprint.edit_food', food_id=food.id) }}" class="btn btn-success btn-xs">
+												<i class="glyphicon glyphicon-pencil"></i> Edit
+											</a> 
+											<a href="{{ url_for('mealplan_blueprint.delete_food', food_id=food.id) }}" class="btn btn-danger btn-xs">
+                                                <i class="glyphicon glyphicon-trash"></i> Delete
+                                            </a>
+                                             
+										</td>
+									</tr>
+                                    {% endfor %}
+							
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!--<footer>
+				<div class="row pad">
+					<div class="col-lg-12 text-center">
+						
+					</div>
+				</div>
+			</footer> -->	
+
+		</div>
+    </div>
+		<!-- jQuery -->
+		<script src="./bs/js/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="./bs/js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+{% endblock %}

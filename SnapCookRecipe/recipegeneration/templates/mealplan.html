@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mt-5">Meal Planner</h1>
+        <form action="/mealplan" method="get">
+            <div class="form-group mt-3">
+                <label for="mealType">Select Meal Type:</label>
+                <select class="form-control" id="mealType" name="meal_type">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Get Meals</button>
+        </form>
+
+        {% if meals %}
+        <h2 class="mt-5">Meal Suggestions</h2>
+        <div class="mt-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Calories</th>
+                        <th>Protein (g)</th>
+                        <th>Fat (g)</th>
+                        <th>Carbs (g)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for meal in meals %}
+                    <tr>
+                        <td>{{ meal.title }}</td>
+                        <td>{{ meal.nutrients.calories }}</td>
+                        <td>{{ meal.nutrients.protein }}</td>
+                        <td>{{ meal.nutrients.fat }}</td>
+                        <td>{{ meal.nutrients.carbohydrates }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
+
+{% endblock content %}

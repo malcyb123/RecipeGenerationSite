@@ -1,0 +1,215 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend Recipe</title>
+    <!-- Link to Bootswatch Flatly theme CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+
+    <style>
+        .ingredients-container {
+            column-count: 3;
+            column-gap: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card mt-5"> <!-- Added mt-3 class for margin-top -->
+        <div class="jumbotron">
+            <h1 class="display-4">Recommend Recipe</h1>
+            <div class="card mb-3">
+                <div class="card-header">Enter Ingredients</div>
+                <div class="card-body">
+                    <form action="/recipe_recommend" method="post">
+                        <label for="manual_ingredients">Enter ingredients manually:</label><br>
+                        <input type="text" id="manual_ingredients" name="manual_ingredients" class="form-control"
+                            placeholder="Enter ingredients separated by commas"><br>
+                        <label for="ingredients">Or select from predefined ingredients:</label><br>
+                        <div class="ingredients-container">
+                            <input type="checkbox" id="rice" name="ingredients[]" value="rice" class="ingredient-checkbox">
+                            <label for="rice">Rice</label><br>
+                            <input type="checkbox" id="chicken" name="ingredients[]" value="chicken" class="ingredient-checkbox">
+                            <label for="chicken">Chicken</label><br>
+                            <input type="checkbox" id="onion" name="ingredients[]" value="onion" class="ingredient-checkbox">
+                            <label for="onion">Onion</label><br>
+                            <input type="checkbox" id="tomato" name="ingredients[]" value="tomato" class="ingredient-checkbox">
+                            <label for="tomato">Tomato</label><br>
+                            <input type="checkbox" id="chocolate" name="ingredients[]" value="chocolate" class="ingredient-checkbox">
+                            <label for="chocolate">Chocolate</label><br>
+                            <input type="checkbox" id="flour" name="ingredients[]" value="flour" class="ingredient-checkbox">
+                            <label for="flour">Flour</label><br>
+                            <input type="checkbox" id="butter" name="ingredients[]" value="butter" class="ingredient-checkbox">
+                            <label for="butter">Butter</label><br>
+                            <input type="checkbox" id="eggs" name="ingredients[]" value="eggs" class="ingredient-checkbox">
+                            <label for="eggs">Eggs</label><br>
+                            <input type="checkbox" id="garam_masala" name="ingredients[]" value="garam_masala" class="ingredient-checkbox">
+                            <label for="garam_masala">Garam Masala</label><br>
+                        </div>
+                        
+                            <!-- Add more checkboxes as needed -->
+                        </div>
+                        <input type="submit" value="Get Recipe" class="btn btn-primary btn-lg">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        {% if title %}
+        <div class="card">
+            <div class="card-header"><h3>{{ title }}</h3></div>
+            <div class="card-body">
+                <h4>Ingredients:</h4>
+<ul>
+    {% for ingredient in ingredients %}
+        {% set ingredient_parts = ingredient.split(':') %}
+        {% set ingredient_name = ingredient_parts[0] %}
+        <li>{{ ingredient_name }}</li>
+    {% endfor %}
+</ul>
+
+                <h4>Instructions:</h4>
+<ul>
+    {% for step in instructions.split('.') %}
+        {% if step %}
+            <li>{{ step | striptags }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+                
+               <button id="showCookingTime" class="btn btn-secondary">Show Cooking Time</button> 
+                <button id="showNutrients" class="btn btn-secondary">Show Nutrients</button>
+                <div id="cookingTime" style="display: none;"></div>
+                <div id="nutrients" style="display: none;">
+                    <h3>Nutrient Information</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nutrient</th>
+                                <th>Amount</th>
+                                <th>Daily Needs Percentage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Calories</td>
+                                <td>${data.calories.amount} ${data.calories.unit}</td>
+                                <td>${data.calories.percent_of_daily_needs}%</td>
+                            </tr>
+                            <tr>
+                                <td>Carbohydrates</td>
+                                <td>${data.carbohydrates.amount} ${data.carbohydrates.unit}</td>
+                                <td>${data.carbohydrates.percent_of_daily_needs}%</td>
+                            </tr>
+                            <tr>
+                                <td>Fat</td>
+                                <td>${data.fat.amount} ${data.fat.unit}</td>
+                                <td>${data.fat.percent_of_daily_needs}%</td>
+                            </tr>
+                            <tr>
+                                <td>Protein</td>
+                                <td>${data.protein.amount} ${data.protein.unit}</td>
+                                <td>${data.protein.percent_of_daily_needs}%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+            <script>
+                     document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('showCookingTime').addEventListener('click', function () {
+                fetchCookingTime('{{ recipe_id }}');
+            });
+
+            document.getElementById('showNutrients').addEventListener('click', function () {
+                fetchNutrients('{{ recipe_id }}');
+            });
+        });
+
+        function fetchCookingTime(recipeId) {
+            fetch(`/get_cooking_time?recipe_id=${recipeId}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('cookingTime').innerText = `Estimated Cooking Time: ${data.cookingTime} minutes`;
+                    document.getElementById('cookingTime').style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error fetching cooking time:', error);
+                });
+        }
+
+        function fetchNutrients(recipeId) {
+    fetch(`/get_nutrients?recipe_id=${recipeId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch nutrient information');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Process the nutrient data here
+            console.log(data);
+
+            // Display nutrient information in the table
+            document.getElementById('nutrients').innerHTML = `
+                <table class="table">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Nutrient</th>
+                            <th>Amount</th>
+                            <th>Percent of Daily Needs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Calories</td>
+                            <td>${data.calories.amount} ${data.calories.unit}</td>
+                            <td>${data.calories.percent_of_daily_needs}%</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates</td>
+                            <td>${data.carbohydrates.amount} ${data.carbohydrates.unit}</td>
+                            <td>${data.carbohydrates.percent_of_daily_needs}%</td>
+                        </tr>
+                        <tr>
+                            <td>Fat</td>
+                            <td>${data.fat.amount} ${data.fat.unit}</td>
+                            <td>${data.fat.percent_of_daily_needs}%</td>
+                        </tr>
+                        <tr>
+                            <td>Protein</td>
+                            <td>${data.protein.amount} ${data.protein.unit}</td>
+                            <td>${data.protein.percent_of_daily_needs}%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+
+            // Show the #nutrients div
+            document.getElementById('nutrients').style.display = 'block';
+        })
+        .catch(error => {
+            console.error('Error fetching nutrient information:', error);
+            // Handle the error here
+            // You can display an error message to the user or perform any other actions
+        });
+}
+
+    </script>
+            </script>
+        </div>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block home %}
+<div id="info" class="col-md-8">
+    <div class="card m-3">
+        <!-- Display the image if img is not None -->
+        {% if img %}
+        <img src="{{ url_for('static', filename=img) }}" class="card-img-top" alt="Food Image">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title text-center" id="infotitle">Generate recipe from a food image</h5>
+            <br>
+            <p class="card-text" id="infobody">A recipe along with title, ingredient and instructions will be shown here</p>
+            <p class="card-text"><small class="text-muted">Will take a few seconds to process! <br>45s approx</small></p>
+        </div>
+    </div>
+</div>
+<div id="loading" style="display:none;" class="col-md-8">
+    <div class="loader">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        <!--<h4>Loading</h4> -->
+    </div>
+</div>
+{% endblock %}

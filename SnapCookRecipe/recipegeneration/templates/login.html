@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    /* Custom CSS for the login form */
+    .form-group {
+        margin-bottom: 20px; /* Add space between form fields */
+    }
+
+    .form-control {
+        border: 2px solid #333; /* Add border to form controls */
+        border-radius: 8px; /* Round the corners of the form controls */
+        color: #333; /* Set text color */
+    }
+
+    .form-control:focus {
+        border-color: #007bff; /* Change border color on focus */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add focus effect */
+    }
+
+    .btn {
+        background-color: #007bff; /* Set button background color */
+        border-color: #007bff; /* Set button border color */
+        color: #fff; /* Set button text color */
+    }
+
+    .btn:hover {
+        background-color: #0056b3; /* Change button background color on hover */
+        border-color: #0056b3; /* Change button border color on hover */
+    }
+
+    .btn:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Add focus effect on button */
+    }
+
+    .card {
+        border: 2px solid #333; /* Add border to card */
+        border-radius: 15px; /* Round the corners of the card */
+    }
+
+    /* Custom CSS for the password visibility toggle */
+    .password-toggle {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .password-toggle i {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .password-toggle i:hover {
+        color: #007bff;
+    }
+</style>
+
+<script>
+    // JavaScript for password visibility toggle
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("exampleInputPassword");
+        var passwordToggle = document.getElementById("password-toggle");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            passwordToggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+        } else {
+            passwordInput.type = "password";
+            passwordToggle.innerHTML = '<i class="fas fa-eye"></i>';
+        }
+    }
+
+     // JavaScript for password validation
+    function validatePassword() {
+        var passwordInput = document.getElementById("exampleInputPassword").value;
+        var passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+        if (!passwordPattern.test(passwordInput)) {
+            alert("Password must be at least 8 characters long and contain at least 1 number and 1 symbol.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <h3 class="text-center mb-4">Login</h3>
+            <div class="card">
+                <div class="card-body">
+                    <div class="box">
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                <div class="notification is-danger">
+                                    {% for message in messages %}
+                                        <p>{{ message }}</p>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endwith %}
+                    </div>
+                    <form method="POST" action="/login">
+                        <div class="form-group">
+                            <input class="form-control form-control-lg" type="email" name="email" placeholder="Your Email" autofocus="">
+                        </div>
+
+                        <div class="form-group position-relative">
+                            <input class="form-control form-control-lg" type="password" name="password" id="exampleInputPassword" placeholder="Your Password">
+                            <span class="password-toggle" onclick="togglePasswordVisibility()" id="password-toggle"><i class="fas fa-eye"></i></span>
+                        </div>
+
+                        <button class="btn btn-lg btn-primary" onclick="return validatePassword();">Login</button>
+                    </form>
+                    <p class="mt-3 text-center">Don't have an account? <a href="{{ url_for('auth.signup') }}">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

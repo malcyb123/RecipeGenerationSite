@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Grocery List</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #fff3cd;
+            border: 2px solid #ffeeba;
+            border-radius: 10px;
+            padding: 60px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-control-lg {
+            width: 100%;
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn-lg {
+            font-size: 24px;
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-lg:hover {
+            background-color: #218838;
+        }
+        .grocery-list {
+            margin-top: 20px;
+        }
+        .list-group-item {
+            background-color: transparent;
+            border: none;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="text-center">Generate Grocery List</h1>
+            <form id="groceryForm">
+                <input type="text" class="form-control-lg" id="recipeName" name="recipeName" placeholder="Enter Recipe Name">
+                <button type="button" class="btn btn-lg" onclick="generateGroceryList()">Generate Grocery List</button>
+            </form>
+            <div id="groceryList" class="grocery-list"></div>
+        </div>
+    </div>
+
+    <script>
+        function generateGroceryList() {
+            var recipeName = document.getElementById("recipeName").value;
+            fetch('/generate_grocery_list_debug', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ recipe_name: recipeName }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById("groceryList").innerHTML = '<div class="alert alert-danger" role="alert">' + data.error + '</div>';
+                } else {
+                    var groceryListHtml = "<h2 class='mt-4'>Grocery List for " + recipeName + ":</h2><ul class='list-group'>";
+                    data.grocery_list.forEach(item => {
+                        groceryListHtml += "<li class='list-group-item'>" + item + "</li>";
+                    });
+                    groceryListHtml += "</ul>";
+                    document.getElementById("groceryList").innerHTML = groceryListHtml;
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById("groceryList").innerHTML = '<div class="alert alert-danger" role="alert">An error occurred while fetching the grocery list.</div>';
+            });
+            document.getElementById("recipeName").value = ''; // Clear input after submission
+        }
+    </script>
+</body>
+</html>
+
+{% endblock content %}
+
