@@ -1,0 +1,1964 @@
+{
+    "Cannellini Bean and Asparagus Salad with Mushrooms": [
+        {
+            "name": "cooked white dried cannellini beans",
+            "image": "dry-cannellini-beans.jpg",
+            "amount": {
+                "metric": {
+                    "value": 757.5,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 3.75,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "dried curry leaves",
+            "image": "curry-leaves.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "handful"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "handful"
+                }
+            }
+        },
+        {
+            "name": "fresh tarragon",
+            "image": "tarragon.jpg",
+            "amount": {
+                "metric": {
+                    "value": 12.75,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 0.25,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "clove"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "clove"
+                }
+            }
+        },
+        {
+            "name": "lemon (juice)",
+            "image": "lemon-juice.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "lemon zest",
+            "image": "zest-lemon.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 108.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "black fresh cracked pepper",
+            "image": "pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 6.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 6.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "sea salt",
+            "image": "salt.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        },
+        {
+            "name": "white mushrooms",
+            "image": "mushrooms-white.jpg",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "large"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "large"
+                }
+            }
+        },
+        {
+            "name": "white mushrooms",
+            "image": "mushrooms.png",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "large"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "large"
+                }
+            }
+        },
+        {
+            "name": "grain mustard",
+            "image": "whole-grain-mustard.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        }
+    ],
+    "Banana Smoothie": [
+        {
+            "name": "banana",
+            "image": "mixed-fresh-fruit.jpg",
+            "amount": {
+                "metric": {
+                    "value": 56.25,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 0.25,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "graham cracker crumbs",
+            "image": "graham-crackers.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "soy milk",
+            "image": "soy-milk.jpg",
+            "amount": {
+                "metric": {
+                    "value": 236.0,
+                    "unit": "ml"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "strawberries",
+            "image": "strawberries.png",
+            "amount": {
+                "metric": {
+                    "value": 72.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "vanilla yogurt",
+            "image": "vanilla-yogurt.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "container"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "container"
+                }
+            }
+        }
+    ],
+    "Chicken Soup": [
+        {
+            "name": "diced additional toppings: avocado",
+            "image": "avocado.jpg",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "diced carrots",
+            "image": "sliced-carrot.png",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "medium"
+                }
+            }
+        },
+        {
+            "name": "diced celery stalks",
+            "image": "celery.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "shredded chicken breast",
+            "image": "cooked-chicken-breast.png",
+            "amount": {
+                "metric": {
+                    "value": 280.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "italian flat leaf parsley",
+            "image": "parsley.jpg",
+            "amount": {
+                "metric": {
+                    "value": 30.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 6.0,
+                    "unit": "cloves"
+                },
+                "us": {
+                    "value": 6.0,
+                    "unit": "cloves"
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "canned tomatoes",
+            "image": "tomatoes-canned.png",
+            "amount": {
+                "metric": {
+                    "value": 793.787,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 28.0,
+                    "unit": "ounce"
+                }
+            }
+        },
+        {
+            "name": "red dried lentils",
+            "image": "red-lentils.png",
+            "amount": {
+                "metric": {
+                    "value": 360.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "black salt and pepper",
+            "image": "salt-and-pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "diced turnip",
+            "image": "turnips.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "large"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "large"
+                }
+            }
+        },
+        {
+            "name": "vegetable stock",
+            "image": "chicken-broth.png",
+            "amount": {
+                "metric": {
+                    "value": 1.88,
+                    "unit": "l"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "yellow diced onion",
+            "image": "brown-onion.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "medium"
+                }
+            }
+        }
+    ],
+    "Soup": [
+        {
+            "name": "frozen asparagus",
+            "image": "asparagus.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "bag"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "bag"
+                }
+            }
+        },
+        {
+            "name": "evoo",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "Tbsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "Tbsp"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                }
+            }
+        },
+        {
+            "name": "onion",
+            "image": "brown-onion.png",
+            "amount": {
+                "metric": {
+                    "value": 0.5,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "frozen peas",
+            "image": "peas.jpg",
+            "amount": {
+                "metric": {
+                    "value": 290.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "c"
+                }
+            }
+        },
+        {
+            "name": "low sodium vegetable broth",
+            "image": "chicken-broth.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "box"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "box"
+                }
+            }
+        }
+    ],
+    "Garlicky Kale": [
+        {
+            "name": "balsamic vinegar",
+            "image": "balsamic-vinegar.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "clove"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "clove"
+                }
+            }
+        },
+        {
+            "name": "curly kale",
+            "image": "kale.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "bunch"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "bunch"
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "servings"
+                }
+            }
+        }
+    ],
+    "Slow Cooker Beef Stew": [
+        {
+            "name": "canned beef broth",
+            "image": "beef-broth.png",
+            "amount": {
+                "metric": {
+                    "value": 411.068,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 14.5,
+                    "unit": "oz"
+                }
+            }
+        },
+        {
+            "name": "carrots",
+            "image": "sliced-carrot.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "large"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "large"
+                }
+            }
+        },
+        {
+            "name": "celery",
+            "image": "celery.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "stalks"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "stalks"
+                }
+            }
+        },
+        {
+            "name": "canned cream of mushroom soup",
+            "image": "cream-of-mushroom-soup.png",
+            "amount": {
+                "metric": {
+                    "value": 737.088,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 26.0,
+                    "unit": "oz"
+                }
+            }
+        },
+        {
+            "name": "green onions",
+            "image": "spring-onions.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "red new potatoes",
+            "image": "new-potatoes.jpg",
+            "amount": {
+                "metric": {
+                    "value": 10.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 10.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "onion",
+            "image": "brown-onion.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "small"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "small"
+                }
+            }
+        },
+        {
+            "name": "dale's seasoning",
+            "image": "seasoning.png",
+            "amount": {
+                "metric": {
+                    "value": 118.294,
+                    "unit": "ml"
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "stew meat",
+            "image": "beef-cubes-raw.png",
+            "amount": {
+                "metric": {
+                    "value": 907.185,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "pounds"
+                }
+            }
+        },
+        {
+            "name": "water",
+            "image": "water.png",
+            "amount": {
+                "metric": {
+                    "value": 473.176,
+                    "unit": "ml"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        }
+    ],
+    "Red Kidney Bean Jambalaya": [
+        {
+            "name": "cooked dried brown rice",
+            "image": "rice-brown-cooked.png",
+            "amount": {
+                "metric": {
+                    "value": 390.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "carrots",
+            "image": "sliced-carrot.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "medium"
+                }
+            }
+        },
+        {
+            "name": "celery",
+            "image": "celery.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "stalks"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "stalks"
+                }
+            }
+        },
+        {
+            "name": "celery seed",
+            "image": "celery-seed.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        },
+        {
+            "name": "cooked dried kidney beans",
+            "image": "kidney-beans.jpg",
+            "amount": {
+                "metric": {
+                    "value": 368.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "dried marjoram",
+            "image": "marjoram.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        },
+        {
+            "name": "dried thyme",
+            "image": "thyme.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "eggplant",
+            "image": "eggplant.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "medium"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                }
+            }
+        },
+        {
+            "name": "green beans",
+            "image": "green-beans-or-string-beans.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "handfuls"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "handfuls"
+                }
+            }
+        },
+        {
+            "name": "black fresh ground pepper",
+            "image": "pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 6.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 6.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "ground sage",
+            "image": "dried-sage.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "liquid smoke",
+            "image": "dark-sauce.jpg",
+            "amount": {
+                "metric": {
+                    "value": 0.5,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 0.5,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "red bell pepper",
+            "image": "red-pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "red white diced onion",
+            "image": "brown-onion.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "small"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "small"
+                }
+            }
+        },
+        {
+            "name": "sea salt",
+            "image": "salt.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.5,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 1.5,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "sriracha",
+            "image": "hot-sauce-or-tabasco.png",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "tsp"
+                }
+            }
+        },
+        {
+            "name": "diced tomatoes",
+            "image": "tomato.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "medium"
+                }
+            }
+        },
+        {
+            "name": "vegetable stock",
+            "image": "chicken-broth.png",
+            "amount": {
+                "metric": {
+                    "value": 705.0,
+                    "unit": "ml"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "cups"
+                }
+            }
+        }
+    ],
+    "Chicken Fajita": [
+        {
+            "name": "avocado",
+            "image": "avocado.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "medium"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "medium"
+                }
+            }
+        },
+        
+        {
+            "name": "bell peppers",
+            "image": "yellow-bell-pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "bell peppers",
+            "image": "bell-pepper-orange.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "cooked grilled chicken breasts",
+            "image": "cooked-chicken-breast.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "chili powder",
+            "image": "chili-powder.jpg",
+            "amount": {
+                "metric": {
+                    "value": 0.25,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 0.25,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "cilantro",
+            "image": "cilantro.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "cumin",
+            "image": "ground-cumin.jpg",
+            "amount": {
+                "metric": {
+                    "value": 0.25,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 0.25,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "shredded lettuce",
+            "image": "iceberg-lettuce.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "cooked already quinoa",
+            "image": "cooked-quinoa.png",
+            "amount": {
+                "metric": {
+                    "value": 185.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "salsa",
+            "image": "salsa.png",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "salt and pepper",
+            "image": "salt-and-pepper.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "low fat shredded cheese",
+            "image": "cheddar-cheese.png",
+            "amount": {
+                "metric": {
+                    "value": 112.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "cup"
+                }
+            }
+        }
+    ],
+    "Fried Rice": [
+        {
+            "name": "grapeseed oil",
+            "image": "vegetable-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "coconut oil",
+            "image": "oil-coconut.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "green dark scallions",
+            "image": "spring-onions.jpg",
+            "amount": {
+                "metric": {
+                    "value": 7.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 7.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 5.0,
+                    "unit": "cloves"
+                },
+                "us": {
+                    "value": 5.0,
+                    "unit": "cloves"
+                }
+            }
+        },
+        {
+            "name": "raw cauliflower",
+            "image": "cauliflower.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.0,
+                    "unit": "head"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "head"
+                }
+            }
+        },
+        {
+            "name": "cooked brown rice",
+            "image": "rice-brown-cooked.png",
+            "amount": {
+                "metric": {
+                    "value": 585.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "cooked broccoli",
+            "image": "broccoli.jpg",
+            "amount": {
+                "metric": {
+                    "value": 176.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "frozen peas",
+            "image": "peas.jpg",
+            "amount": {
+                "metric": {
+                    "value": 145.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 1.0,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "low sodium soy sauce",
+            "image": "soy-sauce.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "sesame oil",
+            "image": "sesame-oil.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "sesame seeds",
+            "image": "sesame-seeds.png",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "additional scallion tops",
+            "image": "spring-onions.jpg",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "salt",
+            "image": "salt.jpg",
+            "amount": {
+                "metric": {
+                    "value": 8.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 8.0,
+                    "unit": "servings"
+                }
+            }
+        }
+    ],
+    "Pasta": [
+        {
+          "name": "Penne pasta",
+          "image": "penne-pasta.jpg",
+          "amount": {
+            "metric": {
+              "value": 500.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 1.1,
+              "unit": "lbs"
+            }
+          }
+        },
+        {
+          "name": "Tomatoes (diced)",
+          "image": "diced-tomatoes.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "medium"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "medium"
+            }
+          }
+        },
+        {
+          "name": "Garlic (minced)",
+          "image": "minced-garlic.jpg",
+          "amount": {
+            "metric": {
+              "value": 3.0,
+              "unit": "cloves"
+            },
+            "us": {
+              "value": 3.0,
+              "unit": "cloves"
+            }
+          }
+        },
+        {
+          "name": "Fresh basil leaves (chopped)",
+          "image": "chopped-basil.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "cup"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "cup"
+            }
+          }
+        },
+        {
+          "name": "Olive oil",
+          "image": "olive-oil.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "tbsps"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "tbsps"
+            }
+          }
+        },
+        {
+          "name": "Salt",
+          "image": "salt.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "tsp"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "tsp"
+            }
+          }
+        },
+        {
+          "name": "Black pepper",
+          "image": "black-pepper.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "tsp"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "tsp"
+            }
+          }
+        }
+      ],
+      "Pizza": [
+        {
+          "name": "Pizza dough",
+          "image": "pizza-dough.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "package"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "package"
+            }
+          }
+        },
+        {
+          "name": "Pizza sauce",
+          "image": "pizza-sauce.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "cup"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "cup"
+            }
+          }
+        },
+        {
+          "name": "Mozzarella cheese (shredded)",
+          "image": "shredded-mozzarella.jpg",
+          "amount": {
+            "metric": {
+              "value": 200.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 7.0,
+              "unit": "oz"
+            }
+          }
+        },
+        {
+          "name": "Pepperoni slices",
+          "image": "pepperoni-slices.jpg",
+          "amount": {
+            "metric": {
+              "value": 100.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 3.5,
+              "unit": "oz"
+            }
+          }
+        },
+        {
+          "name": "Green bell pepper (sliced)",
+          "image": "sliced-green-bell-pepper.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "medium"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "medium"
+            }
+          }
+        },
+        {
+          "name": "Red onion (sliced)",
+          "image": "sliced-red-onion.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "medium"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "medium"
+            }
+          }
+        },
+        {
+          "name": "Mushrooms (sliced)",
+          "image": "sliced-mushrooms.jpg",
+          "amount": {
+            "metric": {
+              "value": 100.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 3.5,
+              "unit": "oz"
+            }
+          }
+        },
+        {
+          "name": "Black olives (sliced)",
+          "image": "sliced-black-olives.jpg",
+          "amount": {
+            "metric": {
+              "value": 50.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "oz"
+            }
+          }
+        },
+        {
+          "name": "Dried oregano",
+          "image": "dried-oregano.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "tsp"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "tsp"
+            }
+          }
+        }
+      ],
+      "Burger": [
+        {
+          "name": "Ground beef",
+          "image": "ground-beef.jpg",
+          "amount": {
+            "metric": {
+              "value": 500.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 1.1,
+              "unit": "lbs"
+            }
+          }
+        },
+        {
+          "name": "Hamburger buns",
+          "image": "hamburger-buns.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "pieces"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "pieces"
+            }
+          }
+        },
+        {
+          "name": "Lettuce leaves",
+          "image": "lettuce-leaves.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "leaves"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "leaves"
+            }
+          }
+        },
+        {
+          "name": "Tomato slices",
+          "image": "tomato-slices.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "medium"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "medium"
+            }
+          }
+        },
+        {
+          "name": "Red onion slices",
+          "image": "red-onion-slices.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "small"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "small"
+            }
+          }
+        },
+        {
+          "name": "Pickles",
+          "image": "pickles.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "pieces"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "pieces"
+            }
+          }
+        },
+        {
+          "name": "Cheddar cheese slices",
+          "image": "cheddar-cheese-slices.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "slices"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "slices"
+            }
+          }
+        },
+        {
+          "name": "Ketchup",
+          "image": "ketchup.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "tbsps"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "tbsps"
+            }
+          }
+        },
+        {
+          "name": "Mustard",
+          "image": "mustard.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "tbsps"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "tbsps"
+            }
+          }
+        },
+        {
+          "name": "Mayonnaise",
+          "image": "mayonnaise.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "tbsps"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "tbsps"
+            }
+          }
+        }
+      ],
+      "Penne Pasta": [
+        {
+          "name": "Penne pasta",
+          "image": "penne-pasta.jpg",
+          "amount": {
+            "metric": {
+              "value": 500.0,
+              "unit": "g"
+            },
+            "us": {
+              "value": 1.1,
+              "unit": "lbs"
+            }
+          }
+        },
+        {
+          "name": "Tomatoes (diced)",
+          "image": "diced-tomatoes.jpg",
+          "amount": {
+            "metric": {
+              "value": 4.0,
+              "unit": "medium"
+            },
+            "us": {
+              "value": 4.0,
+              "unit": "medium"
+            }
+          }
+        },
+        {
+          "name": "Garlic (minced)",
+          "image": "minced-garlic.jpg",
+          "amount": {
+            "metric": {
+              "value": 3.0,
+              "unit": "cloves"
+            },
+            "us": {
+              "value": 3.0,
+              "unit": "cloves"
+            }
+          }
+        },
+        {
+          "name": "Fresh basil leaves (chopped)",
+          "image": "chopped-basil.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "cup"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "cup"
+            }
+          }
+        },
+        {
+          "name": "Olive oil",
+          "image": "olive-oil.jpg",
+          "amount": {
+            "metric": {
+              "value": 2.0,
+              "unit": "tbsps"
+            },
+            "us": {
+              "value": 2.0,
+              "unit": "tbsps"
+            }
+          }
+        },
+        {
+          "name": "Salt",
+          "image": "salt.jpg",
+          "amount": {
+            "metric": {
+              "value": 1.0,
+              "unit": "tsp"
+            },
+            "us": {
+              "value": 1.0,
+              "unit": "tsp"
+            }
+          }
+        },
+        {
+          "name": "Black pepper",
+          "image": "black-pepper.jpg",
+          "amount": {
+            "metric": {
+              "value": 0.5,
+              "unit": "tsp"
+            },
+            "us": {
+              "value": 0.5,
+              "unit": "tsp"
+            }
+          }
+        }
+      ],
+    "Hummus and Za'atar": [
+        {
+            "name": "cooked dried chickpeas",
+            "image": "chickpeas.png",
+            "amount": {
+                "metric": {
+                    "value": 600.0,
+                    "unit": "g"
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": "cups"
+                }
+            }
+        },
+        {
+            "name": "garlic",
+            "image": "garlic.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "cloves"
+                }
+            }
+        },
+        {
+            "name": "lemon (juice)",
+            "image": "lemon-juice.jpg",
+            "amount": {
+                "metric": {
+                    "value": 3.0,
+                    "unit": ""
+                },
+                "us": {
+                    "value": 3.0,
+                    "unit": ""
+                }
+            }
+        },
+        {
+            "name": "olive oil",
+            "image": "olive-oil.jpg",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        
+        {
+            "name": "paprika",
+            "image": "paprika.jpg",
+            "amount": {
+                "metric": {
+                    "value": 4.0,
+                    "unit": "servings"
+                },
+                "us": {
+                    "value": 4.0,
+                    "unit": "servings"
+                }
+            }
+        },
+        {
+            "name": "pine nuts",
+            "image": "pine-nuts.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        },
+        {
+            "name": "sea salt",
+            "image": "salt.jpg",
+            "amount": {
+                "metric": {
+                    "value": 1.5,
+                    "unit": "tsps"
+                },
+                "us": {
+                    "value": 1.5,
+                    "unit": "tsps"
+                }
+            }
+        },
+        {
+            "name": "tahini",
+            "image": "tahini-paste.png",
+            "amount": {
+                "metric": {
+                    "value": 80.0,
+                    "unit": "ml"
+                },
+                "us": {
+                    "value": 0.33333334,
+                    "unit": "cup"
+                }
+            }
+        },
+        {
+            "name": "za'atar",
+            "image": "zaatar.png",
+            "amount": {
+                "metric": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                },
+                "us": {
+                    "value": 2.0,
+                    "unit": "Tbsps"
+                }
+            }
+        }
+    ]
+}
