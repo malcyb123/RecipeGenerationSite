@@ -24,21 +24,22 @@ def init_app(app):
     with app.app_context():
         db.create_all()
 
+log_food = db.Table('log_food',
+    db.Column('log_id', db.Integer, db.ForeignKey('log.id'), primary_key=True),
+    db.Column('food_id', db.Integer, db.ForeignKey('food.id'), primary_key=True)
+)
+
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
     name = db.Column(db.String(1000))
-
-#MEALPLAN
     
-#Table for relation b/w date and food
-
-log_food = db.Table('log_food',
-    db.Column('log_id', db.Integer,db.ForeignKey('log.id'), primary_key=True),
-    db.Column('food_id', db.Integer,db.ForeignKey('food.id'), primary_key=True),
-     db.Column('quantity', db.Integer, default=1)  # Adding a quantity column with default value 1
-)
+    # Establish a one-to-many relationship between User and Log
+    logs = db.relationship('Log', backref='user', lazy=True)
+    
+    # Establish a one-to-many relationship between User and Food
+    foods = db.relationship('Food', backref='user', lazy=True)
 
 class Food(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -46,34 +47,28 @@ class Food(db.Model):
     proteins = db.Column(db.Integer, nullable=False)
     carbs = db.Column(db.Integer, nullable=False)
     fats = db.Column(db.Integer, nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  # Add this line
-
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     @property
     def calories(self):
-     try:
-        # Convert proteins, carbs, and fats to integers before performing the calculation
-        proteins = int(self.proteins)
-        carbs = int(self.carbs)
-        fats = int(self.fats)
-        
-        # Calculate the total calories
-        return proteins * 4 + carbs * 4 + fats * 9
-     except (TypeError, ValueError):
-        # Handle cases where any of the values are missing or not integers
-        return None  # Or any default value you want to return in case of error
+        try:
+            proteins = int(self.proteins)
+            carbs = int(self.carbs)
+            fats = int(self.fats)
+            return proteins * 4 + carbs * 4 + fats * 9
+        except (TypeError, ValueError):
+            return None
 
-
-    
 class Log(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     date = db.Column(db.Date, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+    # Establish a many-to-many relationship between Log and Food
     foods = db.relationship('Food', secondary='log_food', lazy='subquery',
-                             backref=db.backref('logs', lazy=True)) # this line of code establishes the many-to-many relationship between logs and foods and defines how to navigate this relationship from both sides of the association.
-
-
-
-
+                            backref=db.backref('logs', lazy=True))
+    
+    
 #food
 def label2onehot(labels, pad_value):
 
