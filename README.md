@@ -53,3 +53,5 @@ To simplify meal preparation by combining recipe generation, nutrition awareness
 ## Project Status
 
 Completed as part of final year academic project and dissertation (Semester 6).
+
+Dissertation Link: [Snapcook - A recipe generation site](https://drive.google.com/file/d/1hbyhx3vbw8ZqUKwMGL-xV8MRRgzYRLHA/view?usp=sharing)
